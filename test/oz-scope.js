@@ -2,12 +2,16 @@
 var Oz = require('oz');
 var ozText = require('oz-text');
 var ozVal = require('oz-val');
+var ozScope = require('oz-scope');
 var assert = require('assert');
 var text = require('text');
 var children = require('children');
 var trigger = require('trigger-event');
 
-Oz.use(ozText).use(ozVal);
+Oz
+  .use(ozText)
+  .use(ozVal)
+  .use(ozScope);
 
 describe('Rendering', function(){
 
