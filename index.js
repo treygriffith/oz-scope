@@ -8,7 +8,7 @@ module.exports = function (Oz) {
 module.exports.render = render;
 
 /**
- * Namespace subordinate nodes to this object, and hide if its a falsey value
+ * Namespace subordinate nodes to this object, and hide if it's a falsey value
  * template: <div oz="person"><p oz-text="name"></p></div>
  * context: { person: {name: 'Tobi'} }
  * output: <div oz="person"><p oz-text="name">Tobi</p></div>
