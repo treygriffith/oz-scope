@@ -4,7 +4,7 @@ build: components index.js
 
 dist: components
 				@component build --standalone oz-scope --name oz-scope --out dist
-				@uglifyjs dist/oz-scope.js -o dist/oz-scope.min.js_
+				@uglifyjs dist/oz-scope.js -o dist/oz-scope.min.js
 
 components: component.json
 				@component install --dev
