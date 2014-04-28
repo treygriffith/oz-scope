@@ -41,7 +41,7 @@ var context = {
 ```
 
 ```html
-<div oz="person">
+<div oz-scope="person">
   <span oz-text="name">Tobi</span>
 </div>
 ```
