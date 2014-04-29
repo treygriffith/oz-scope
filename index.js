@@ -14,10 +14,7 @@ module.exports.render = render;
  * output: <div oz="person"><p oz-text="name">Tobi</p></div>
  */
 
-function render (el, ctx, prop, scope, next) {
-
-  var self = this
-    , val = this.get(ctx, prop);
+function render (el, val, scope) {
 
   if(!val) {
     this.hide(el);
@@ -25,6 +22,6 @@ function render (el, ctx, prop, scope, next) {
     this.show(el);
   }
 
-  next(el, val, this.scope(scope, prop));
+  return scope;
 }
 
